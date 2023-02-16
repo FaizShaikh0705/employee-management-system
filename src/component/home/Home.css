@@ -4,5 +4,14 @@
 
 .header_info {
     height: 100vh;
-    justify-content: center;
+    padding-left: 45rem;
+    padding-top: 10rem;  
+}
+
+.header_info h1 {
+    font-size: 3rem;
+} 
+
+.header_info h2 {
+    font-size: 2rem;
 }
