@@ -1,0 +1,8 @@
+#header {
+    background-color: var(--color-bg-dark);
+}
+
+.header_info {
+    height: 100vh;
+    justify-content: center;
+}
