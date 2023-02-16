@@ -16,7 +16,7 @@ class Nav extends Component {
           <img className='logo1' src={Logo1} alt="logo_img1" href="#"/>
           <div className="navbar_option">
             <ul id='navbar_menu'className={this.state.clicked ? "navbar_menu active" : "#navbar_menu"}>
-              <li><a href="#" className='navbar-list'>Home</a></li>
+              <li><a href="HOme" className='navbar-list'>Home</a></li>
               <li><a href="Services" className='navbar-list'>Services</a></li>
               <li><a href="About" className='navbar-list'>About</a></li>
               <li><a href="Contact" className='navbar-list'>Contact</a></li>
