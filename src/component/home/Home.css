@@ -1,5 +1,5 @@
 #header {
-    background-color: var(--color-bg-dark);
+    background: linear-gradient(to right, #C147E9, #1369b9);
 }
 
 .header_info {

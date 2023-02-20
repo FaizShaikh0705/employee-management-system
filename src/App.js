@@ -1,15 +1,22 @@
 import './App.css';
-import Nav from './component/nav/Nav'
-import Footer from './component/footer/Footer'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './component/home/Home'
+import Login from "./component/login/Login";
+import { AuthProvider } from './context/Auth';
+import PrivateRoute from './common/guards/PrivateRoute';
 
 function App() {
   return (
-    <>
-    <Nav />
-    <Home />
-    <Footer />
-    </>
+    <AuthProvider>
+    <Router>
+      <Switch>
+        <PrivateRoute exact path="/" component={Home} />
+        <Route path="/Login" component={Login} />
+        <Route exact path="*" component={Home} />
+      </Switch>
+    </Router>
+  </AuthProvider>
+   
   );
 }
 
